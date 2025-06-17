@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import Navbar from '../components/Navbar/Navbar'
 import Hero from '../components/hero/hero';
 import Features from '../components/Features/Features';
-import About from '../components/About/About';
+import About from '../components/about/about';
 import Practice from '../components/Practice';
 import CaseStudies from '../components/CaseStudies/CaseStudies';
 import Testimonial from '../components/Testimonial/Testimonial';

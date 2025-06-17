@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Image from 'next/image';
 
 // Import clientele images
-import clientImg1 from '/public/images/clients/1.png'
+import clientImg1 from '/public/images/clients/1.PNG'
 import clientImg2 from '/public/images/clients/2.png'
 import clientImg3 from '/public/images/clients/3.png'
 import clientImg4 from '/public/images/clients/4.png'
