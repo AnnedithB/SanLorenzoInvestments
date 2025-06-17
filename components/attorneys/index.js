@@ -4,13 +4,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from 'next/image';
 
-// Import clientele images
-import clientImg1 from '/public/images/clients/1.PNG'
-import clientImg2 from '/public/images/clients/2.png'
-import clientImg3 from '/public/images/clients/3.png'
-import clientImg4 from '/public/images/clients/4.png'
-import clientImg5 from '/public/images/clients/5.png'
-
 const settings = {
     dots: false,
     arrows: true,
@@ -67,35 +60,35 @@ const settings = {
 const Clientele = [
     {
         id: '1',
-        AtImg: clientImg1,
+        AtImg: '/images/clients/2.png',
         name: 'Hotels & Hospitality',
         title: 'Luxury Resorts & Boutique Hotels',
         description: 'Luxury resorts, boutique hotels, and exclusive clubs throughout Miami and South Florida trust Terra Luxe for creating memorable guest experiences through exceptional furnishings.'
     },
     {
         id: '2',
-        AtImg: clientImg2,
+        AtImg: '/images/clients/3.png',
         name: 'Corporate Headquarters',
         title: 'Fortune 500 Companies',
         description: 'Fortune 500 companies and prestigious firms choose our furniture for executive offices, reception areas, and outdoor corporate spaces that reflect their commitment to excellence.'
     },
     {
         id: '3',
-        AtImg: clientImg3,
+        AtImg: '/images/clients/4.png',
         name: 'Fine Dining Establishments',
         title: 'Michelin-Starred Restaurants',
         description: 'Michelin-starred restaurants and upscale dining venues rely on our commercial-grade pieces to create ambiance that matches their culinary artistry.'
     },
     {
         id: '4',
-        AtImg: clientImg4,
+        AtImg: '/images/clients/5.png',
         name: 'Luxury Real Estate',
         title: 'Premier Developers',
         description: 'Premier developers and residential associations partner with us to furnish common areas, pool decks, and outdoor spaces that enhance property values and resident satisfaction.'
     },
     {
         id: '5',
-        AtImg: clientImg5,
+        AtImg: '/images/clients/2.png',
         name: 'Exclusive Residential Communities',
         title: 'High-End Condominiums',
         description: 'High-end condominiums and gated communities choose Terra Luxe to create sophisticated communal spaces that reflect their residents\' refined tastes.'
