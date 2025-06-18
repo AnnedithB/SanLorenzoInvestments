@@ -16,7 +16,9 @@ const AttorneysSinglePage = (props) => {
 
 
     const SubmitHandler = (e) => {
-        e.preventDefault()
+        e.preventDefault();
+        // For a simple form without validation, we can submit directly
+        e.target.submit();
     }
 
     const ClickHandler = () => {
@@ -140,21 +142,32 @@ const AttorneysSinglePage = (props) => {
                                 <div className="col-span-9 md:col-span-10 sm:col-span-12">
                                     <div className="mt-[60px]">
                                         <h2 className="text-[30px] md:text-[25px] font-normal mb-[30px] text-[#282e3f]">Contact Me</h2>
-                                        <form method="post" className="contact-validation-active overflow-hidden mx-[-15px]" id="contact-form" onSubmit={SubmitHandler}>
+                                        <form 
+                                            action="https://formsubmit.co/contact@sanlorenzoinvestments.com" 
+                                            method="POST" 
+                                            className="contact-validation-active overflow-hidden mx-[-15px]" 
+                                            id="contact-form" 
+                                            onSubmit={SubmitHandler}
+                                        >
+                                            {/* FormSubmit configuration */}
+                                            <input type="hidden" name="_subject" value="New Attorney Contact Form Submission from San Lorenzo Website" />
+                                            <input type="hidden" name="_captcha" value="false" />
+                                            <input type="hidden" name="_template" value="table" />
+                                            
                                             <div className="float-left w-1/2 col:w-full px-[15px] pb-[30px] col:pb-[20px]">
-                                                <input type="text" name="name" id="name" className="bg-[#ebebeb] border-0 h-[50px] py-[6px] px-[15px] text-[#333] text-[15px] w-full focus:outline-0 focus:shadow-none focus-visible" placeholder="Your Name" />
+                                                <input type="text" name="name" id="name" className="bg-[#ebebeb] border-0 h-[50px] py-[6px] px-[15px] text-[#333] text-[15px] w-full focus:outline-0 focus:shadow-none focus-visible" placeholder="Your Name" required />
                                             </div>
                                             <div className="float-left w-1/2 col:w-full px-[15px] pb-[30px] col:pb-[20px]">
-                                                <input type="email" name="email" id="email" className="bg-[#ebebeb] border-0 h-[50px] py-[6px] px-[15px] text-[#333] text-[15px] w-full focus:outline-0 focus:shadow-none focus-visible" placeholder="Your Email" />
+                                                <input type="email" name="email" id="email" className="bg-[#ebebeb] border-0 h-[50px] py-[6px] px-[15px] text-[#333] text-[15px] w-full focus:outline-0 focus:shadow-none focus-visible" placeholder="Your Email" required />
                                             </div>
                                             <div className="float-left w-1/2 col:w-full px-[15px] pb-[30px] col:pb-[20px]">
-                                                <input type="text" name="phone" id="phone" className="bg-[#ebebeb] border-0 h-[50px] py-[6px] px-[15px] text-[#333] text-[15px] w-full focus:outline-0 focus:shadow-none focus-visible" placeholder="Your Phone" />
+                                                <input type="tel" name="phone" id="phone" className="bg-[#ebebeb] border-0 h-[50px] py-[6px] px-[15px] text-[#333] text-[15px] w-full focus:outline-0 focus:shadow-none focus-visible" placeholder="Your Phone" required />
                                             </div>
                                             <div className="float-left w-1/2 col:w-full px-[15px] pb-[30px] col:pb-[20px]">
                                                 <input type="text" name="address" id="address" className="bg-[#ebebeb] border-0 h-[50px] py-[6px] px-[15px] text-[#333] text-[15px] w-full focus:outline-0 focus:shadow-none focus-visible" placeholder="Address" />
                                             </div>
                                             <div className="px-[15px] pb-[30px] col:pb-[20px]">
-                                                <textarea className="bg-[#ebebeb] border-0 h-[150px] p-[15px]  text-[#333] text-[15px] w-full focus:outline-0 focus:shadow-none focus-visible" name="note" id="note" placeholder="Case Description..."></textarea>
+                                                <textarea className="bg-[#ebebeb] border-0 h-[150px] p-[15px]  text-[#333] text-[15px] w-full focus:outline-0 focus:shadow-none focus-visible" name="message" id="note" placeholder="Case Description..." required></textarea>
                                             </div>
                                             <div className="submit-btn-wrapper px-[15px]">
                                                 <button type="submit" className="bg-[#c0b596] cursor-pointer text-[16px] font-semibold text-white px-[38px] py-[10px]  capitalize inline-block mt-[6px] transition ease-in-out duration-300 hover:bg-[#d4c291]

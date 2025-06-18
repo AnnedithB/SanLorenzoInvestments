@@ -17,7 +17,9 @@ const BlogSingle = (props) => {
     const BlogDetails = blogs.find(item => item.slug === slug)
 
     const submitHandler = (e) => {
-        e.preventDefault()
+        e.preventDefault();
+        // For a simple comment form, we can submit directly
+        e.target.submit();
     }
 
     const ClickHandler = () => {
@@ -211,19 +213,30 @@ const BlogSingle = (props) => {
                                     <div className="mb-[30px]">
                                         <h2 className="font-medium uppercase  tracking-[2px] text-[#333] text-[22px] leading-[130.5%] trant md:text-[25px]">Leave a reply</h2>
                                     </div>
-                                    <form method="post" className="contact-validation-active" id="contact-form-main" onSubmit={submitHandler}>
+                                    <form 
+                                        action="https://formsubmit.co/contact@sanlorenzoinvestments.com" 
+                                        method="POST" 
+                                        className="contact-validation-active" 
+                                        id="contact-form-main" 
+                                        onSubmit={submitHandler}
+                                    >
+                                        {/* FormSubmit configuration */}
+                                        <input type="hidden" name="_subject" value="New Blog Comment from San Lorenzo Website" />
+                                        <input type="hidden" name="_captcha" value="false" />
+                                        <input type="hidden" name="_template" value="table" />
+                                        
                                         <div className="grid grid-cols-12 gap-3">
                                             <div className="col-span-6 md:col-span-6 sm:col-span-12 mb-3">
-                                                <input type="text" className="form-control w-full rounded-[30px] h-[50px] pl-[15px] focus:outline-0 focus:shadow-none bg-transparent border border-[#ddd] text-[#666]" placeholder="Your Name" />
+                                                <input type="text" name="name" className="form-control w-full rounded-[30px] h-[50px] pl-[15px] focus:outline-0 focus:shadow-none bg-transparent border border-[#ddd] text-[#666]" placeholder="Your Name" required />
                                             </div>
                                             <div className="col-span-6 md:col-span-6 sm:col-span-12 mb-3">
-                                                <input type="email" className="form-control w-full rounded-[30px] h-[50px] pl-[15px] focus:outline-0 focus:shadow-none bg-transparent border border-[#ddd] text-[#666]" placeholder="Your Email" />
+                                                <input type="email" name="email" className="form-control w-full rounded-[30px] h-[50px] pl-[15px] focus:outline-0 focus:shadow-none bg-transparent border border-[#ddd] text-[#666]" placeholder="Your Email" required />
                                             </div>
                                             <div className="col-span-12 mb-3">
-                                                <input type="url" className="form-control w-full rounded-[30px] h-[50px] pl-[15px] focus:outline-0 focus:shadow-none bg-transparent border border-[#ddd] text-[#666]" placeholder="Website" />
+                                                <input type="url" name="website" className="form-control w-full rounded-[30px] h-[50px] pl-[15px] focus:outline-0 focus:shadow-none bg-transparent border border-[#ddd] text-[#666]" placeholder="Website" />
                                             </div>
                                             <div className="col-span-12">
-                                                <textarea className="form-control w-full h-[220px] rounded-[30px] pl-[15px] pt-[10px] focus:outline-0 focus:shadow-none bg-transparent border border-[#ddd] text-[#666]" name="note" id="note" placeholder="Write Your Comments..."></textarea>
+                                                <textarea className="form-control w-full h-[220px] rounded-[30px] pl-[15px] pt-[10px] focus:outline-0 focus:shadow-none bg-transparent border border-[#ddd] text-[#666]" name="message" id="note" placeholder="Write Your Comments..." required></textarea>
                                             </div>
                                         </div>
                                         <div className="mt-[10px]">

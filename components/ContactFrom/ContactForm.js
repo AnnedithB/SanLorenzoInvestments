@@ -27,20 +27,26 @@ const ContactForm = () => {
         e.preventDefault();
         if (validator.allValid()) {
             validator.hideMessages();
-            setForms({
-                name: '',
-                email: '',
-                subject: '',
-                phone: '',
-                message: ''
-            })
+            // Let the form submit naturally to FormSubmit
+            e.target.submit();
         } else {
             validator.showMessages();
         }
     };
 
     return (
-        <form method="post" className="contact-validation-active mx-[-15px] overflow-hidden" id="contact-form-main" onSubmit={(e) => submitHandler(e)}>
+        <form 
+            action="https://formsubmit.co/contact@sanlorenzoinvestments.com" 
+            method="POST" 
+            className="contact-validation-active mx-[-15px] overflow-hidden" 
+            id="contact-form-main" 
+            onSubmit={(e) => submitHandler(e)}
+        >
+            {/* FormSubmit configuration */}
+            <input type="hidden" name="_subject" value="New Contact Form Submission from San Lorenzo Website" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+            
             <div className="w-[calc(50%-30px)] float-left mx-[15px] mb-[25px] col:float-none col:w-[calc(100%-25px)]">
                 <input
                     className='form-control w-full bg-transparent h-[50px] border border-[#ebebeb] text-[#666] transition-all pl-[25px] focus:outline-0 focus:shadow-none focus:border-[#c0b596] focus:bg-transparent'
@@ -49,7 +55,8 @@ const ContactForm = () => {
                     name="name"
                     onBlur={(e) => changeHandler(e)}
                     onChange={(e) => changeHandler(e)}
-                    placeholder="Your Name" />
+                    placeholder="Your Name" 
+                    required />
                 {validator.message('name', forms.name, 'required|alpha_space')}
             </div>
             <div className="w-[calc(50%-30px)] float-left mx-[15px] mb-[25px] col:float-none col:w-[calc(100%-25px)]">
@@ -60,18 +67,20 @@ const ContactForm = () => {
                     name="email"
                     onBlur={(e) => changeHandler(e)}
                     onChange={(e) => changeHandler(e)}
-                    placeholder="Your Email" />
+                    placeholder="Your Email" 
+                    required />
                 {validator.message('email', forms.email, 'required|email')}
             </div>
             <div className="w-[calc(50%-30px)] float-left mx-[15px] mb-[25px] col:float-none col:w-[calc(100%-25px)]">
                 <input
                     className='form-control  w-full bg-transparent h-[50px] border border-[#ebebeb] text-[#666] transition-all pl-[25px] focus:outline-0 focus:shadow-none focus:border-[#c0b596] focus:bg-transparent'
                     value={forms.phone}
-                    type="phone"
+                    type="tel"
                     name="phone"
                     onBlur={(e) => changeHandler(e)}
                     onChange={(e) => changeHandler(e)}
-                    placeholder="Your phone" />
+                    placeholder="Your phone" 
+                    required />
                 {validator.message('phone', forms.phone, 'required|phone')}
             </div>
             
@@ -82,9 +91,9 @@ const ContactForm = () => {
                     onBlur={(e) => changeHandler(e)}
                     onChange={(e) => changeHandler(e)}
                     value={forms.message}
-                    type="text"
                     name="message"
-                    placeholder="Message">
+                    placeholder="Message"
+                    required>
                 </textarea>
                 {validator.message('message', forms.message, 'required')}
             </div>
