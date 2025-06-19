@@ -10,7 +10,7 @@ const Practices = [
     {
         Id: '1',
         sImg: simg,
-        sTitle: 'San Lorenzo Luxe Furnishing',
+        sTitle: 'Terra Luxe Furnishing',
         slug: 'sanlorenzoluxe',
         description: 'Sophisticated commercial-grade furniture featuring premium Teak and yacht-inspired fabrics for hospitality, corporate, and residential developments throughout South Florida',
         des2: 'Premium Commercial Furnishings',

@@ -2109,7 +2109,8 @@ label.error {
     top: 0;
     z-index: 999;
     cursor: pointer;
-    background: #c0b596;
+    background: #F5F5DC;
+    border: 1px solid #c0b596;
 }
 .showmenu button{
     border: 0;
@@ -2191,7 +2192,7 @@ label.error {
         box-shadow: none;
     }
     .showmenu button span{
-        background-color: #fff;
+        background-color: #c0b596;
         width: 20px;
         display: block;
         height: 2px;

@@ -15,11 +15,11 @@ import blog7 from '/public/images/blog-details/2.jpg'
 import blog8 from '/public/images/blog-details/3.jpg'
 import Footer from '../../components/footer/Footer';
 
-    const submitHandler = (e) => {
+const submitHandler = (e) => {
         e.preventDefault();
         // For a simple comment form, we can submit directly
         e.target.submit();
-    }
+}
 const ClickHandler = () => {
     window.scrollTo(10, 0);
 }

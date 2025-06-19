@@ -20,7 +20,7 @@ const About2 = (props) => {
                                 <h2 className="text-[36px] md:text-[26px] font-medium text-[#333] pb-[20px] relative 
                         before:absolute before:content-[''] before:left-[-68px] 
                         before:top-[30px] before:transform before:-translate-y-1/2 
-                        before:w-[60px] before:h-[1px] before:bg-[#c0b596] md:before:hidden">Why Choose San Lorenzo Luxe</h2>
+                        before:w-[60px] before:h-[1px] before:bg-[#c0b596] md:before:hidden">Why Choose Terra Luxe</h2>
                             </div>
                             <p className="text-[#666] text-[15px] leading-[28px] mb-[30px]">Every piece is meticulously crafted from premium Teak wood, selected for its natural beauty, durability, and resistance to South Florida's demanding climate conditions. Our upholstery and fabrics draw inspiration from luxury yacht interiors, engineered to withstand sun, salt, and moisture while maintaining their luxurious appearance. These sophisticated, timeless designs complement both contemporary and classic architectural styles, creating spaces that feel both current and enduring.</p>
                             <p className="text-[#666] text-[15px] leading-[28px] mb-[30px]">Built to withstand high-traffic environments while maintaining residential-level comfort and style, our furniture delivers commercial-grade performance perfect for hospitality and corporate applications. From initial consultation to final installation, our dedicated team manages every aspect of your furnishing project, ensuring timely delivery and flawless execution that exceeds expectations.</p>
