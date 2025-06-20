@@ -10,8 +10,8 @@ const Practice3 = (props) => {
             sImg: '/images/brands/1.png',
             sTitle: 'Terra Luxe Furnishing',
             slug: 'sanlorenzoluxe',
-            description: 'Sophisticated commercial-grade furniture featuring premium Teak and yacht-inspired fabrics for hospitality, corporate, and residential developments throughout South Florida',
-            des2: 'Premium Commercial Furnishings',
+            description: 'Sophisticated commercial-grade furniture featuring premium Teak and yacht-inspired fabrics for hospitality, corporate, and residential developments nationwide',
+            des2: 'Premium Commercial & Residential Furnishings',
         },
         {
             Id: '2',
@@ -35,7 +35,7 @@ const Practice3 = (props) => {
             sTitle: 'Aqua Loft',
             slug: 'aqua-loft',
             description: 'Exclusive floating venues and private charters creating unforgettable luxury experiences on Miami\'s pristine waters',
-            des2: 'Private Charters & Floating Venues',
+            des2: 'Private Charter Services',
         },
     ];
 
@@ -48,7 +48,7 @@ const Practice3 = (props) => {
             <div className="wraper">
                 <div className="col-span-12 text-center">
                     <div className="mb-[60px]">
-                        <span className="text-[16px] text-[#ada282]">Our Portfolio</span>
+                        <span className="text-[16px] text-[#ada282]">Our Brands & Services</span>
                         <h2 className=" text-[36px] md:text-[26px] font-medium text-[#333] pb-[20px] relative before:absolute before:content-['']
              before:left-[50%] before:bottom-0 before:transform before:-translate-x-1/2 before:w-[60px] before:h-[3px]
               before:bg-[#c0b596]">How Can We Help You</h2>
@@ -68,12 +68,12 @@ const Practice3 = (props) => {
                                             className="w-full h-full object-cover transition-all duration-300 group-hover:scale-110"
                                         />
                                     </div>
-                                    <div className="text-center py-[40px] px-[30px] flex-grow flex flex-col justify-center">
-                                        <h3 className="text-[#373737] text-[24px] col:text-[20px] font-medium relative pt-[24px] mb-[10px] hover:text-[#c0b596] transition-all
+                                    <div className="text-center py-[40px] px-[30px] flex-grow flex flex-col justify-center h-[140px]">
+                                        <h3 className="text-[#373737] text-[22px] col:text-[18px] font-medium relative pt-[24px] mb-[15px] hover:text-[#c0b596] transition-all h-[50px] flex items-center justify-center
                         before:absolute before:content-[''] before:left-1/2 before:top-[10px] before:transform before:-translate-x-1/2 before:w-[65px] before:h-[1px] before:bg-[#c0b596]">
                                             {venture.sTitle}
                                         </h3>
-                                        <p className="text-[#777] text-[16px] font-normal">{venture.des2}</p>
+                                        <p className="text-[#777] text-[15px] font-normal h-[30px] flex items-center justify-center">{venture.des2}</p>
                                     </div>
                                 </div>
                             </Link>

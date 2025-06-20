@@ -12,7 +12,7 @@ const Practices = [
         sImg: simg,
         sTitle: 'Pool Areas & Outdoor Sanctuaries',
         slug: 'pool-areas-outdoor-sanctuaries',
-        description: 'Premium Teak loungers, dining sets, and poolside furniture featuring weather-resistant yacht-grade upholstery. Designed to withstand South Florida\'s climate while maintaining luxurious comfort and aesthetic appeal.',
+        description: 'Premium outdoor furniture collection featuring weather-resistant Teak construction and commercial-grade upholstery. Designed to withstand various climates nationwide while maintaining luxurious comfort and aesthetic appeal.',
         des2: 'Poolside Excellence',
         icon: FaSwimmingPool,
     },

@@ -12,16 +12,11 @@ const menus = [
     },
     {
         id: 2,
-        title: 'San Lorenzo Luxe',
-        link: '/sanlorenzoluxe',
-    },
-    {
-        id: 3,
-        title: 'Ventures & Brands',
+        title: 'Brands & Services',
         link: '/ventures',
     },
     {
-        id: 4,
+        id: 3,
         title: 'Contact',
         link: '/contact',
     }

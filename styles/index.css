@@ -43,7 +43,7 @@
     @apply py-[120px] md:py-[90px] sm:py-[80px] relative  z-10
 }
 .wraper{
-    @apply mx-auto max-w-[1140px] xl:px-[12px]  lg:px-[12px] md:px-[20px] sm:px-[10px]
+    @apply mx-auto max-w-[1140px] xl:px-[2px]  lg:px-[2px] md:px-[4px] sm:px-[4px]
 }
         
 .theme-btn-2{

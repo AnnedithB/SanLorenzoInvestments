@@ -12,7 +12,7 @@ const Practices = [
         sImg: simg,
         sTitle: 'Terra Luxe Furnishing',
         slug: 'sanlorenzoluxe',
-        description: 'Sophisticated commercial-grade furniture featuring premium Teak and yacht-inspired fabrics for hospitality, corporate, and residential developments throughout South Florida',
+        description: 'Sophisticated commercial-grade furniture featuring premium Teak and yacht-inspired fabrics for hospitality, corporate, and residential developments nationwide',
         des2: 'Premium Commercial Furnishings',
         Icon: FaCouch,
     },

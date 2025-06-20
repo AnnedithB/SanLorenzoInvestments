@@ -34,10 +34,7 @@ const Hero = () => {
                                     <Link onClick={ClickHandler} href="/contact" className="bg-[#c0b596] relative cursor-pointer text-[16px]
                          font-semibold text-white px-[38px] py-[12px]  capitalize inline-block mt-[6px] 
                          transition ease-in-out duration-300 hover:bg-[#d4c291]
-                        col:mb-[5px] col:mt-[15px] col:text-[15px] col:px-[18px] col:py-[8px] 
-                        before:absolute before:content-[''] before:w-[85px] before:h-[2px] before:left-[-60px]
-                         before:top-[50%]  before:bg-white before:transform before:translate-y-[-50%] 
-                         before:transition-all hover:before:left-[-95px] md:before:hidden">Contact us now</Link>
+                        col:mb-[5px] col:mt-[15px] col:text-[15px] col:px-[18px] col:py-[8px]">Contact Us</Link>Us
                                 </div>
                             </div>
                             

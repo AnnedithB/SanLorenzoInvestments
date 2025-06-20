@@ -27,7 +27,7 @@ const Footer = (props) => {
                             </div>
                             <p className="text-[#282e3f] text-[16px] mb-[20px] leading-[26px]">
                                 San Lorenzo Investments, LLC is a diversified holding company specializing in luxury experiences, 
-                premium mobility solutions, convenience services, and exclusive floating venues across multiple markets.
+                                premium mobility solutions, convenience services, and exclusive floating venues across multiple markets.
                             </p>
                             <ul className="flex items-center gap-[15px] pt-[15px]">
                                 <li><Link className="footer-social-link" onClick={SubmitHandler} href="/"><i className="ti-facebook"></i></Link></li>
@@ -45,11 +45,10 @@ const Footer = (props) => {
                             </div>
                             <ul className="space-y-[8px]">
                                 <li><Link className="footer-link" href="/">Home</Link></li>
-                                <li><Link className="footer-link" href="/sanlorenzoluxe">Terra Luxe Furnishing</Link></li>
                                 <li><Link className="footer-link" href="/the-residents-pantry">The Resident's Pantry</Link></li>
                                 <li><Link className="footer-link" href="/the-estate-rovers">Estate Rovers</Link></li>
                                 <li><Link className="footer-link" href="/aqua-loft">Aqua Loft</Link></li>
-                                <li><Link className="footer-link" href="/ventures">Our Ventures</Link></li>
+                                <li><Link className="footer-link" href="/ventures">Our Brands & Services</Link></li>
                                 <li><Link className="footer-link" href="/contact">Contact Us</Link></li>
                             </ul>
                         </div>
@@ -75,7 +74,7 @@ const Footer = (props) => {
             <div className="wraper">
                 <div className=" border-t-1 border-[rgba(192,181,150,.3)] relative">
                     <div className="h-[1px] absolute left-[15px] top-0 bg-[#ffffff0d] w-[calc(100%+30px)]"></div>
-                    <p className="text-center text-[#282e3f] text-[14px] py-[20px]"> Privacy Policy | &copy; 2023 Barristar. All rights reserved</p>
+                    <p className="text-center text-[#282e3f] text-[14px] py-[20px]"> Privacy Policy | &copy; 2025 San Lorenzo Investments, LLC. All rights reserved</p>
                 </div>
             </div>
         </footer>

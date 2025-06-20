@@ -1,5 +1,5 @@
 import React from "react";
-import { FaCar, FaBatteryFull, FaCogs, FaShieldAlt, FaPalette, FaWrench } from 'react-icons/fa';
+import { FaCar, FaBatteryFull, FaCogs, FaShieldAlt, FaPalette, FaWrench, FaHandshake } from 'react-icons/fa';
 
 const Collection = () => {
     
@@ -14,6 +14,14 @@ const Collection = () => {
         },
         {
             Id: '2',
+            sTitle: 'Leasing & Sale Service',
+            slug: 'leasing-sale-service',
+            description: 'Flexible leasing options and direct purchase programs tailored to your needs. Estate Rovers provides comprehensive financing solutions for individuals and fleet operators.',
+            des2: 'Flexible Options',
+            icon: FaHandshake,
+        },
+        {
+            Id: '3',
             sTitle: 'Premium Battery Systems',
             slug: 'premium-battery-systems',
             description: '48v-72v lithium battery options providing 40+ mile range. Fast charging capabilities and long-lasting performance for extended use throughout the day.',
@@ -21,7 +29,7 @@ const Collection = () => {
             icon: FaBatteryFull,
         },
         {
-            Id: '3',
+            Id: '4',
             sTitle: 'Advanced Technology',
             slug: 'advanced-technology',
             description: 'Multimedia systems with Apple CarPlay integration, LED lighting packages, GPS navigation, and premium sound systems for the ultimate driving experience.',
@@ -29,7 +37,7 @@ const Collection = () => {
             icon: FaCogs,
         },
         {
-            Id: '4',
+            Id: '5',
             sTitle: 'Custom Design Options',
             slug: 'custom-design-options',
             description: 'Choose from premium color options, luxury seating configurations, custom wraps, and branded designs. Make your fleet uniquely yours.',
@@ -37,7 +45,7 @@ const Collection = () => {
             icon: FaPalette,
         },
         {
-            Id: '5',
+            Id: '6',
             sTitle: 'All-Terrain Capability',
             slug: 'all-terrain-capability',
             description: 'Rugged suspension and tire options for various terrains. From smooth pavement to rough trails, our vehicles handle it all with comfort and stability.',
@@ -45,7 +53,7 @@ const Collection = () => {
             icon: FaCar,
         },
         {
-            Id: '6',
+            Id: '7',
             sTitle: 'Professional Service',
             slug: 'professional-service',
             description: 'Complete maintenance packages, warranty coverage, and 24/7 support. Our certified technicians ensure your fleet stays operational and reliable.',

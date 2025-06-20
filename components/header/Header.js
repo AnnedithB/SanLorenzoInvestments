@@ -36,13 +36,9 @@ const Header = (props) => {
                                 ">Home</Link>
                                 
                             </li>
-                            <li className="relative inline-block">
-                                <Link onClick={ClickHandler} href="/sanlorenzoluxe" className="relative group text-[15px] lg:text-[14px] py-[35px] xl:py-[30px] px-[18px] xl:px-[6px] text-[#2F2F2F] hover:text-[#8B6914] block uppercase font-base-font font-normal transition-all
-                               ">San Lorenzo Luxe</Link>
-                            </li>
                             <li className="relative inline-block group">
                                 <Link onClick={ClickHandler} href="/ventures" className="relative group text-[15px] lg:text-[14px] py-[35px] xl:py-[30px] px-[18px] xl:px-[6px] text-[#2F2F2F] hover:text-[#8B6914] block uppercase font-base-font font-normal transition-all
-                              ">Ventures & Brands</Link>
+                              ">Brands & Services</Link>
                                 
                             </li>
                             

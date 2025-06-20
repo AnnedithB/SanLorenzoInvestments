@@ -25,7 +25,7 @@ const Testimonial = (props) => {
     const clientele = [
         {
             tsImg: ts1,
-            Des: "Luxury resorts, boutique hotels, and exclusive clubs throughout Miami and South Florida trust Terra Luxe for creating memorable guest experiences through exceptional furnishings.",
+            Des: "Luxury resorts, boutique hotels, and exclusive clubs nationwide trust Terra Luxe for creating memorable guest experiences through exceptional furnishings.",
             Title: 'Hotels & Hospitality',
             Sub: "Luxury Resorts & Boutique Hotels",
         },
@@ -67,7 +67,7 @@ const Testimonial = (props) => {
                     <div className="col-span-8 md:col-span-6 sm:col-span-12 sm:order-1">
                         <div className="testimonial-text ml-[95px] mt-[50px] md:ml-0">
                             <div className="text-left sm:text-center">
-                                <span className="text-[16px] text-[#ada282]">Trusted by South Florida's Finest</span>
+                                <span className="text-[16px] text-[#ada282]">Trusted by the Nation's Finest</span>
                                 <h2 className="text-[36px] md:text-[26px] font-medium text-[#333] pb-[20px] relative 
                         before:absolute before:content-[''] before:left-[-68px] 
                         before:top-[30px] before:transform before:-translate-y-1/2 
